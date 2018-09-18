@@ -23,6 +23,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
     }
     
+    @IBAction func showActivityView(_ sender: UIBarButtonItem) {
+        let controller = UIActivityViewController(activityItems: [imageView.image!], applicationActivities: nil)
+        self.present(controller, animated: true, completion: {() -> Void in
+            print("完了")
+        })
+    }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage

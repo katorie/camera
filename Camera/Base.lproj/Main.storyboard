@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17C88" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eN2-OO-azN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="eN2-OO-azN">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="giN-8E-jFQ">
@@ -32,18 +32,23 @@
                                             <action selector="launchCamera:" destination="BYZ-38-t0r" id="xQi-C2-9TM"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem systemItem="action" id="Vx0-ny-thi">
+                                        <connections>
+                                            <action selector="showActivityView:" destination="BYZ-38-t0r" id="fBp-ay-Quj"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="eN2-OO-azN" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="9UR-1g-hzA"/>
-                            <constraint firstItem="eN2-OO-azN" firstAttribute="trailing" secondItem="giN-8E-jFQ" secondAttribute="trailing" id="D9Q-z6-ivV"/>
-                            <constraint firstItem="eN2-OO-azN" firstAttribute="leading" secondItem="giN-8E-jFQ" secondAttribute="leading" id="PLR-ck-2jl"/>
-                            <constraint firstItem="eN2-OO-azN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PhO-Qf-KGp"/>
+                            <constraint firstItem="eN2-OO-azN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Dwe-9a-KJ7"/>
+                            <constraint firstItem="eN2-OO-azN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EUn-iF-W8W"/>
                             <constraint firstItem="giN-8E-jFQ" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="QKd-BH-dyw"/>
-                            <constraint firstAttribute="trailing" secondItem="eN2-OO-azN" secondAttribute="trailing" id="xjo-Cb-QS0"/>
-                            <constraint firstItem="eN2-OO-azN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yZx-MG-aVn"/>
+                            <constraint firstItem="eN2-OO-azN" firstAttribute="trailing" secondItem="giN-8E-jFQ" secondAttribute="trailing" id="Set-7a-55B"/>
+                            <constraint firstItem="eN2-OO-azN" firstAttribute="leading" secondItem="giN-8E-jFQ" secondAttribute="leading" id="aBg-5Z-MW4"/>
+                            <constraint firstAttribute="trailing" secondItem="eN2-OO-azN" secondAttribute="trailing" id="eiN-Kl-mg9"/>
+                            <constraint firstItem="eN2-OO-azN" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="jF5-ft-7EI"/>
                         </constraints>
                     </view>
                     <connections>
@@ -55,4 +60,7 @@
             <point key="canvasLocation" x="140" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="683" height="1020"/>
+    </resources>
 </document>
